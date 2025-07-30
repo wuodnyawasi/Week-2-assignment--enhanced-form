@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title >PLP Sports Registration Form</title>
+
+  <!-- style attributes to make the page have structure-->
+
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      padding: 20px;
+    }
+    header, main, footer {
+      max-width: 700px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 6px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+    form div {
+      margin-bottom: 12px;
+    }
+    label {
+      display: block;
+      margin-bottom: 4px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 6px;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 10px 16px;
+      background: #007BFF;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- the begining of my body-->
+
+  <header>
+    <h1>PLP Sports Club Registration</h1>
+    <img src="https://via.placeholder.com/700x150.png?text=Sports+Club+Banner" alt="Sports Banner" style="width:100%; border-radius:6px;">
+  </header>
+
+  <main>
+
+    <!-- list -->
+
+
+    <section>
+      <h2>Popular Sports</h2>
+      <ul>
+        <li>Football</li>
+        <li>Basketball</li>
+        <li>Volleyball</li>
+      </ul>
+    </section>
+
+    <!-- Table elements-->
+
+    <section>
+      <h2>Recent Tournaments</h2>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Date</th>
+        </tr>
+        <tr>
+          <td>July cohorts vs January cohots soccer final</td>
+          <td>July 2025</td>
+        </tr>
+        <tr>
+          <td>Nigeria vs Kenya cohots basketball</td>
+          <td>July 2025</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- My form-->
+
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        <div>
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" placeholder="e.g. Jane Doe" required>
+        </div>
+
+        <div>
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" placeholder="e.g. jane@example.com" required>
+        </div>
+
+        <div>
+          <label for="phone">Phone *</label>
+          <input type="tel" id="phone" name="phone" placeholder="+2547XXXXXXXX" pattern="^\+2547\d{8}$" required>
+        </div>
+
+        <div>
+          <label for="sport">Choose Sport *</label>
+          <select id="sport" name="sport" required>
+            <option value="">-- Select --</option>
+            <option>Football</option>
+            <option>Basketball</option>
+            <option>Volleyball</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country" value="Kenya" readonly>
+        </div>
+
+        <div>
+          <label for="dob">Date of Birth *</label>
+          <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <div>
+          <label for="password">Password *</label>
+          <input type="password" id="password" name="password" placeholder="At least 6 characters" minlength="6" required>
+        </div>
+
+        <div>
+          <label for="bio">Tell us why you want to join</label>
+          <textarea id="bio" name="bio" rows="3" placeholder="Optional..."></textarea>
+        </div>
+
+        <div>
+          <label><input type="checkbox" name="agree" required> I agree to the terms *</label>
+        </div>
+
+        <div>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- My page footer-->
+
+  <footer>
+    <p>&copy; 2025 Sports Club. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
